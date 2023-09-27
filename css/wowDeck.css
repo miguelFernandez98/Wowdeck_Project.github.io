@@ -2,6 +2,10 @@
   overflow: hidden;
 }
 
+.subtitleText{
+  font-size: 2rem;
+}
+
 .titleList {
   list-style: none;
   padding: 0;
@@ -19,7 +23,7 @@
 }
 
 .titleList strong {
-  font-size: 1.19rem;
+  font-size: 1.25rem;
 }
 .imageColumn {
   display: flex;
@@ -426,7 +430,7 @@
   display: flex;
   font-size: 16px;
   font-weight: 200;
-  line-height: 38px;
+  line-height: 35px;
   transform: translate(0);
 }
 
@@ -449,20 +453,17 @@
 
 .row-2-columns {
   width: 100%;
-  grid-column-gap: 124px;
-  grid-row-gap: 57px;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: 1fr;
   margin-top: 60px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  color: #0d0d3f;
 }
 
 .column {
   width: 100%;
 }
 
-.spec-item {
+/* .spec-item {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   text-align: left;
@@ -471,7 +472,7 @@
   grid-auto-columns: 1fr;
   padding: 0;
   display: grid;
-}
+} */
 
 .label {
   color: #2e2e2e;
@@ -509,10 +510,10 @@
   padding: 10px;
 }
 
-.spec-label {
+/* .spec-label {
   align-items: center;
   display: flex;
-}
+} */
 
 .spec-divider {
   height: 1px;
@@ -603,7 +604,14 @@
 }
 
 .div-block-6 {
-  text-align: left;
+  text-align: center;
+}
+
+.videoContainer{
+  height: 20rem;
+  width: auto;
+  padding: 15px;
+  border-radius: 50px;
 }
 
 .info-block {
