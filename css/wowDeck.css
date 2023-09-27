@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 1.50rem;
+  margin-right: 1.5rem;
 }
 
 .imageColumn img {
@@ -67,33 +67,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 2px solid #8383ff;
 }
 
 .iconContainer {
-  width: 4.5rem;
-  height: 4.5rem;
-  background: white;
+  width: 4rem;
+  height: 4rem;
+
   border-radius: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.container-large2 .cardGrid:nth-child(1) {
-  background-color: #8383ff;
-}
-
-.container-large2 .cardGrid:nth-child(2) {
-  background-color: #8383ff;
-}
-
-.container-large2 .cardGrid:nth-child(3) {
-  background-color: #8383ff;
-}
-
-.container-large2 .cardGrid:nth-child(4) {
-  background-color: #8383ff;
+  border: 2px solid #8383ff;
 }
 
 .logoSize {
@@ -288,8 +274,8 @@
 
 .top-view-jaguar {
   z-index: 10;
-  width: 230px;
-  height: 1050px;
+  width: auto;
+  height: 1300px;
   margin-top: 230px;
   position: relative;
 }
@@ -332,14 +318,12 @@
 
 .h2 {
   color: #0d0d3f;
-  text-align: left;
+  text-align: start;
   letter-spacing: 8px;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
   font-size: 20px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 30px;
 }
 
 .h2.margin-top-100 {
@@ -382,8 +366,7 @@
   width: 70px;
   height: 1000px;
   background-color: #dedbff;
-  /* background-color: #cccdff; */
-  /* background-color: #ffcb3c71; */
+  opacity: 0.4;
   margin-left: -320px;
   position: absolute;
   border-radius: 8rem;
@@ -393,9 +376,8 @@
 .graphic-element-03 {
   width: 40px;
   background-color: #aba5fe69;
+  opacity: 0.4;
   height: 1000px;
-  /* background-color: #aba5fe; */
-  /* background-color: #ff7e3d70; */
   margin-left: -200px;
   position: absolute;
   top: -880px;
