@@ -12455,7 +12455,6 @@
       });
     }
   });
-
   // packages/shared/render/plugins/BaseSiteModules/webflow-scroll.js
   var require_webflow_scroll = __commonJS({
     "packages/shared/render/plugins/BaseSiteModules/webflow-scroll.js"(exports, module) {
