@@ -11,6 +11,34 @@
   padding: 0;
 }
 
+.section2 {
+  opacity: 0;
+  padding-left: 4.5rem;
+}
+
+.sectionimg3 {
+  display: flex;
+  flex-direction: row;
+  height: min-content;
+  margin-bottom: 15px;
+}
+.sectiontext3 {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.textDisplay {
+  display: flex;
+  flex-direction: column;
+}
+
+.gifsection4 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  height: min-content;
+}
+
 .cards {
   height: 15rem;
   width: 100%;
@@ -24,12 +52,12 @@
   flex-direction: column;
 }
 
-.textFooter{
-  font-size: 1.20rem;
+.textFooter {
+  font-size: 1.2rem;
 }
 .image-text {
-  font-size: 0.80rem;
-  padding-left: 0.80rem;
+  font-size: 0.8rem;
+  padding-left: 0.8rem;
 }
 
 .card {
@@ -236,23 +264,6 @@
   top: 0;
 }
 
-@media (min-width: 767px) {
-  .header li {
-    float: left;
-  }
-  .header li a {
-    padding: 20px 30px;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
-}
-
 .hero-section {
   width: 100vw;
   height: 100vh;
@@ -373,6 +384,12 @@
   position: relative;
 }
 
+.rocketpart {
+  height: auto !important;
+  width: 2.5rem !important;
+  opacity: 0.5;
+}
+
 .hero-right-column {
   width: 700px;
   flex-direction: column;
@@ -476,7 +493,7 @@
 }
 
 .outline-block {
-  border: 1px solid #0d0d3f4e;
+  border: 1px solid #ffbe0b;
   margin-top: 10px;
   margin-left: 2rem;
   padding-left: 10px;
@@ -562,7 +579,7 @@
   width: 100% !important;
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
-/*   grid-gap: 1rem; */
+  /*   grid-gap: 1rem; */
 }
 .contedorgrid2 img {
   height: auto;
@@ -599,6 +616,15 @@
   text-align: start;
   letter-spacing: 8px;
   font-size: 1.1rem;
+  font-weight: 520;
+  line-height: 28px;
+  margin-top: 50px;
+}
+.labelStylegif {
+  color: #0d0d3f;
+  text-align: start;
+  letter-spacing: 8px;
+  font-size: 1rem;
   font-weight: 520;
   line-height: 28px;
   margin-top: 50px;
@@ -1105,6 +1131,7 @@
   .top-view-jaguar {
     width: auto;
     margin-top: 0;
+    display: none;
   }
 
   .h1 {
@@ -1217,5 +1244,37 @@
 @media screen and (max-width: 479px) {
   #w-node-div-block-4-7409177d {
     grid-area: 2 / 1 / 3 / 2;
+  }
+}
+
+@media (min-width: 767px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .gifsection4 {
+    flex-direction: column;
+  }
+
+  .gifContainer {
+    width: 100%;
+  }
+
+  .labelStylegif {
+    width: 100%;
+    text-align: center;
   }
 }
