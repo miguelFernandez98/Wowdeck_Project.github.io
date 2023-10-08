@@ -10,6 +10,9 @@
   list-style: none;
   padding: 0;
 }
+.textlist {
+  opacity: 0.7;
+}
 
 .section2 {
   opacity: 0;
@@ -37,11 +40,13 @@
   flex-direction: row;
   margin-bottom: 15px;
   height: min-content;
+  margin-bottom: 5rem;
 }
 
 .cards {
-  height: 15rem;
+  height: 12rem;
   width: 100%;
+  margin-top: 2rem !important;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -53,20 +58,26 @@
 }
 
 .textFooter {
+  padding-right: 8rem;
   font-size: 1.2rem;
+  color: #0d0d3f;
+  font-size: 1rem;
+  font-weight: 400;
 }
 .image-text {
   font-size: 0.8rem;
   padding-left: 0.8rem;
+  line-height: 1.2;
 }
 
 .card {
   position: absolute;
   width: 100%;
-  height: 15rem;
+  height: 12rem;
   background-color: #f4f4f4;
   color: #0d0d3f;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -99,7 +110,7 @@
 }
 
 .fontTitle {
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   font-weight: 300;
   white-space: nowrap;
 }
@@ -115,12 +126,18 @@
   width: 100%;
   font-size: 1.3rem;
   color: #ff7e3d;
-  font-weight: 450;
+  font-weight: 400;
   margin-top: 2.5rem;
   text-align: center;
   text-decoration: none;
   flex: auto;
   justify-content: center;
+}
+
+.stageiMG {
+  height: auto !important;
+  width: 8rem !important;
+  opacity: 0.7;
 }
 
 .cardGrid {
@@ -148,7 +165,7 @@
 }
 
 .logoSize {
-  height: 3.5rem;
+  height: 2.5rem;
   width: auto;
   transform-style: revert !important;
 }
@@ -351,6 +368,7 @@
   width: auto;
   height: 900px;
   position: relative;
+  transform-style: revert !important;
 }
 .rotcoh {
   transform: rotate(-12deg);
@@ -366,7 +384,7 @@
   margin-top: 20px;
   margin-bottom: 10px;
   font-family: Montserrat, sans-serif;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 500;
   line-height: 65px;
 }
@@ -408,7 +426,7 @@
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 500;
-  line-height: 35px;
+  line-height: 25px;
 }
 
 .h2.margin-top-100 {
@@ -448,9 +466,9 @@
 }
 
 .graphic-element-02 {
-  width: 70px;
+  width: 35px;
   height: 1000px;
-  background-color: #dedbff;
+  background-color: rgba(128, 128, 128, 0.173);
   opacity: 0.4;
   margin-left: -320px;
   position: absolute;
@@ -459,11 +477,11 @@
 }
 
 .graphic-element-03 {
-  width: 40px;
-  background-color: #aba5fe69;
+  width: 25px;
+  background-color: rgba(128, 128, 128, 0.173);
   opacity: 0.4;
   height: 1000px;
-  margin-left: -200px;
+  margin-left: -235px;
   position: absolute;
   top: -880px;
   border-radius: 8rem;
@@ -519,6 +537,7 @@
 }
 
 .paragraph {
+  margin-top: 2rem;
   text-align: left;
   font-size: 18px;
   font-weight: 300;
@@ -547,18 +566,9 @@
   width: 100%;
 }
 
-.grid-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 100%;
-  list-style: none;
+sup {
+  font-weight: 500;
 }
-
-.grid-list li {
-  padding: 5px;
-  color: #0d0d3f;
-}
-
 /* .spec-item {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -620,21 +630,44 @@
   line-height: 28px;
   margin-top: 50px;
 }
+
+.indicestyle {
+  text-decoration: none !important;
+  color: #585858 !important;
+}
+
+.labelStyleAnimate {
+  color: #585858;
+  text-align: start;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  font-weight: 480;
+  line-height: 28px;
+  margin-top: 50px;
+}
+
 .labelStylegif {
   color: #0d0d3f;
   text-align: start;
   letter-spacing: 8px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 520;
   line-height: 28px;
   margin-top: 50px;
 }
 
 .labelStyle2 {
-  font-size: 1.1rem;
+  color: #0d0d3f;
+  font-size: 0.8rem;
   display: flex;
+  font-weight: 400;
   flex-direction: column;
   text-align: center;
+}
+
+.labelStylecon {
+  color: #ff7e3d;
+  font-size: 1rem;
 }
 
 .label {
@@ -693,6 +726,7 @@
   align-items: flex-start;
   font-size: 16px;
   font-weight: 200;
+  margin-bottom: 5rem;
   line-height: 38px;
 }
 
@@ -771,7 +805,7 @@
   height: 20rem;
   width: auto;
   padding: 20px;
-  border-radius: 55px;
+  border-radius: 30px;
 }
 
 .info-block {
