@@ -10,8 +10,32 @@
   list-style: none;
   padding: 0;
 }
+
 .textlist {
   opacity: 0.7;
+}
+
+.gridAbaout {
+  gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+}
+.section4ro {
+  height: auto;
+  width: auto;
+}
+
+.titleGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 1.5rem;
 }
 
 .section2 {
@@ -70,6 +94,15 @@
   line-height: 1.2;
 }
 
+.letusSEC {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  height: min-content;
+  width: auto;
+}
 .card {
   position: absolute;
   width: 100%;
@@ -366,8 +399,9 @@
 .top-view-jaguar2 {
   z-index: 10;
   width: auto;
-  height: 900px;
+  height: 56.25rem;
   position: relative;
+  margin-top: 4rem;
   transform-style: revert !important;
 }
 .rotcoh {
@@ -1310,5 +1344,14 @@ sup {
   .labelStylegif {
     width: 100%;
     text-align: center;
+  }
+  .contedorgrid {
+    grid-template-columns: 1fr;
+  }
+  .textFooter {
+    padding-right: 0rem;
+  }
+  .top-view-jaguar2 {
+    display: none;
   }
 }
