@@ -1354,4 +1354,11 @@ sup {
   .top-view-jaguar2 {
     display: none;
   }
+  .section4ro {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
