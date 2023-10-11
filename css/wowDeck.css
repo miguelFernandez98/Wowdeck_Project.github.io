@@ -21,6 +21,16 @@
   width: auto;
 }
 
+.containerName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+  opacity: 0.5;
+  padding: 2rem;
+}
+
 .labelstylestrong {
   font-size: 1.2rem;
 }
@@ -81,7 +91,7 @@
 .card {
   position: absolute;
   width: 100%;
-  height: 16rem;
+  height: 16.5rem;
   background-color: #f4f4f4;
   color: #0d0d3f;
   display: flex;
@@ -91,7 +101,7 @@
 }
 
 .cards {
-  height: 16rem;
+  height: 16.5rem;
   width: 100%;
   margin-top: 2rem !important;
   background-color: #f4f4f4;
@@ -125,7 +135,7 @@
   line-height: 1.2;
 }
 
-.sectionRocketshadow{
+.sectionRocketshadow {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
@@ -184,7 +194,7 @@
 }
 
 .fontTitle {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 300;
   white-space: nowrap;
 }
@@ -229,7 +239,6 @@
 .iconContainer {
   width: 4rem;
   height: 4rem;
-
   border-radius: 100%;
   display: flex;
   flex-direction: column;
@@ -239,7 +248,7 @@
 }
 
 .logoSize {
-  height: 2.5rem;
+  height: 2.8rem;
   width: auto;
   transform-style: revert !important;
 }
@@ -254,6 +263,7 @@
   background-color: #f4f4f4;
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -416,14 +426,12 @@
   width: 100vw;
   height: auto;
   text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-right: 16rem;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
   display: flex;
   position: relative;
-  padding: 2rem;
 }
 
 .section7 .column-items .textFooter {
@@ -463,14 +471,14 @@
 
 .section.margin-top-220 {
   height: auto;
-  margin-top: 120px;
+  margin-top: 200px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
 .section.margin-top-100 {
   height: auto;
-  margin-top: 100px;
+  margin-top: 0px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -504,9 +512,19 @@
   margin-top: 20px;
   margin-bottom: 10px;
   font-family: Montserrat, sans-serif;
-  font-size: 2.2rem;
+  font-size: 3rem;
   font-weight: 500;
-  line-height: 65px;
+  line-height: 58px !important;
+}
+
+.fontTitlestrong {
+  color: #ff7e3d;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.fontTitleText {
+  white-space: nowrap;
 }
 
 .h1.outline {
@@ -546,6 +564,17 @@
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 500;
+  line-height: 25px;
+}
+
+.h2Person {
+  color: #0d0d3f;
+  text-align: start;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
   line-height: 25px;
 }
 
@@ -694,17 +723,27 @@ sup {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 10rem;
-  padding-top: 10rem;
+  padding-top: 6rem;
   padding-bottom: 0rem;
   gap: 3rem;
 }
 
 .contedorgrid2 {
-  width: 100% !important;
+  width: 32rem !important;
   display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
+  grid-template-columns: 1fr !important;
   /*   grid-gap: 1rem; */
 }
+
+.imadiv {
+  height: fit-content !important;
+  width: 100% !important;
+  margin-top: 2rem;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
 .contedorgrid2 img {
   height: auto;
   width: 100%;
@@ -819,11 +858,6 @@ sup {
   border: 1px solid #2e2e2e;
   padding: 10px;
 }
-
-/* .spec-label {
-  align-items: center;
-  display: flex;
-} */
 
 .spec-divider {
   height: 1px;
@@ -1071,13 +1105,12 @@ sup {
 }
 
 .car-drawing {
-  width: 100%;
-  height: 300px;
-  display: flex;
+  width: auto;
+  height: 8rem;
+  display: none;
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  transform: rotate(-90deg) !important;
 }
 
 .link {
@@ -1088,12 +1121,21 @@ sup {
   color: #000;
 }
 
+@media screen and (max-width: 1333px) {
+  .contedorgrid2 {
+    width: 31rem !important;
+  }
+}
+
 @media screen and (max-width: 1219px) {
   .contedorgrid {
     padding: 2rem;
     padding-top: 2rem;
     padding-bottom: 0rem;
     gap: 2rem;
+  }
+  .contedorgrid2 {
+    width: 29rem !important;
   }
 }
 
@@ -1102,6 +1144,10 @@ sup {
     width: 100vw;
     height: 100vh;
     padding-top: 100px;
+  }
+
+  .contedorgrid2 {
+    width: 27rem !important;
   }
 
   .contedorgrid {
@@ -1117,7 +1163,7 @@ sup {
 
   .h1 {
     font-size: 40px;
-    line-height: 58px;
+    line-height: 50px;
   }
 
   .hero-left-column {
@@ -1195,15 +1241,31 @@ sup {
   .hero-section {
     width: 100vw;
     height: 100vh;
+    padding-top: 40px;
+    margin-bottom: 10rem;
+  }
+
+  .card {
+    width: 85%;
+    height: 17rem;
+  }
+
+  .cards {
+    height: 17rem;
   }
 
   .hero-container {
     max-width: 500px;
   }
 
+  .contedorgrid2 {
+    width: 90% !important;
+  }
+
   .h1 {
     font-size: 30px;
     line-height: 41px;
+    line-height: 45px !important;
   }
 
   .hero-left-column {
@@ -1277,6 +1339,7 @@ sup {
     width: 100vw;
     height: 100vh;
     padding-top: 0;
+    margin-bottom: 1rem;
   }
 
   .hero-container {
@@ -1285,6 +1348,10 @@ sup {
     padding-left: 40px;
     padding-right: 40px;
     transform: none;
+  }
+
+  .contedorgrid2 {
+    width: 100% !important;
   }
 
   .section {
@@ -1298,8 +1365,9 @@ sup {
   }
 
   .h1 {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 35px;
+    line-height: 40px !important;
   }
 
   .hero-left-column {
@@ -1377,6 +1445,15 @@ sup {
 
   .div-block-14 {
     grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 95%;
+    height: 17.5rem;
+  }
+
+  .cards {
+    height: 17.5rem;
   }
 }
 
@@ -1484,6 +1561,7 @@ sup {
     flex: auto;
     justify-content: center;
   }
+
   .section.margin-top-100 {
     height: auto;
     margin-top: 20px;
@@ -1559,7 +1637,7 @@ sup {
     margin-left: 0rem;
   }
   .contedorgrid {
-    padding: 1rem;
+    padding: 0.8rem;
     padding-top: 10rem;
     padding-bottom: 0rem;
   }
@@ -1574,8 +1652,21 @@ sup {
   }
   .featurestext {
     text-align: start;
-    font-size: 0.90rem;
+    font-size: 0.9rem;
     line-height: 1.3rem;
+  }
+  .car-drawing {
+    display: flex;
+  }
+  .section7 .column-items {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .section7 {
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-right: 0rem;
+    padding-left: 0.7rem;
   }
 }
 
@@ -1583,6 +1674,18 @@ sup {
   .gifsection4 {
     flex-direction: column;
     margin-bottom: 1.5rem;
+  }
+  
+  .graphic-element-01 {
+    display: none;
+  }
+
+  .graphic-element-04 {
+    display: none;
+  }
+
+  .car-drawing {
+    display: flex;
   }
 
   .gifContainer {
@@ -1599,7 +1702,11 @@ sup {
   }
   .contedorgrid {
     grid-template-columns: 1fr;
+    padding: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
   }
+
   .textFooter {
     padding-right: 0rem;
   }
@@ -1698,10 +1805,11 @@ sup {
   }
 
   .titleList strong {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
   }
   .separeteList {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
   .imageColumn {
     display: none;
@@ -1725,10 +1833,7 @@ sup {
   .section7 {
     justify-content: flex-end;
     align-items: flex-start;
-  }
-  .contedorgrid {
-    padding: 1rem;
-    padding-top: 10rem;
-    padding-bottom: 0rem;
+    padding-right: 0rem;
+    padding-left: 0.7rem;
   }
 }
