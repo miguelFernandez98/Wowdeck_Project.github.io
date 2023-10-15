@@ -31,10 +31,6 @@
   padding: 2rem;
 }
 
-.labelstylestrong {
-  font-size: 1.2rem;
-}
-
 .stageStrong {
   font-size: 1.75rem !important;
 }
@@ -92,7 +88,7 @@
   position: absolute;
   width: 100%;
   height: 16.5rem;
-  background-color: #f4f4f4;
+  background-color: #fdfdfd;
   color: #0d0d3f;
   display: flex;
   flex-direction: column;
@@ -104,7 +100,7 @@
   height: 16.5rem;
   width: 100%;
   margin-top: 2rem !important;
-  background-color: #f4f4f4;
+  background-color: #fdfdfd;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -211,11 +207,33 @@
   font-size: 1.3rem;
   color: #ff7e3d;
   font-weight: 400;
-  margin-top: 2.5rem;
+  margin-top: 1.20rem;
   text-align: center;
   text-decoration: none;
   flex: auto;
+  flex-direction: column;
   justify-content: center;
+}
+
+.ImgStyle {
+  height: 7.5rem;
+  padding: 1.5rem;
+  width: auto;
+  opacity: 0.5;
+  background-image: url("../images/ULXWISf.gif");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.flexit {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
 }
 
 .stageiMG {
@@ -260,7 +278,7 @@
 }
 
 .header {
-  background-color: #f4f4f4;
+  background-color: #fdfdfd;
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -271,7 +289,7 @@
 .header ul {
   list-style: none;
   overflow: hidden;
-  background-color: #f4f4f4;
+  background-color: #fdfdfd;
 }
 
 .header li a {
@@ -283,7 +301,7 @@
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: #fdfdfd;
 }
 
 .header .logo {
@@ -377,7 +395,7 @@
 }
 
 .body {
-  background-color: #f4f4f4;
+  background-color: #fdfdfd;
   font-family: Montserrat, sans-serif;
 }
 
@@ -572,7 +590,7 @@
   text-align: start;
   letter-spacing: 8px;
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   font-weight: 500;
   text-decoration: none;
   line-height: 25px;
@@ -782,7 +800,7 @@ sup {
   font-weight: 520;
   line-height: 28px;
   margin-top: 0;
-  margin-bottom: 7.5rem;
+  margin-bottom: 6rem;
 }
 
 .indicestyle {
@@ -1279,7 +1297,7 @@ sup {
 
   .h2 {
     letter-spacing: 3px;
-    font-size: 14px;
+    font-size: 0.85rem;
   }
 
   .jaguar-text {
@@ -1332,6 +1350,10 @@ sup {
     margin-left: -70px;
     right: 310px;
   }
+  .labelStylegif {
+    font-size: 0.8rem;
+    line-height: 22px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1382,7 +1404,7 @@ sup {
   }
 
   .h2 {
-    font-size: 14px;
+    font-size: 0.8rem;
   }
 
   .container {
@@ -1550,16 +1572,15 @@ sup {
     line-height: 28px;
     margin-bottom: 2rem;
   }
+
+  .labelStyleAnimate strong {
+    font-size: 1.2rem;
+  }
+
   .parrStyle {
-    width: 100%;
     font-size: 0.9rem;
-    color: #ff7e3d;
     font-weight: 400;
-    margin-top: 2.5rem;
-    text-align: center;
-    text-decoration: none;
-    flex: auto;
-    justify-content: center;
+    line-height: 1rem !important;
   }
 
   .section.margin-top-100 {
@@ -1568,14 +1589,16 @@ sup {
     padding-top: 20px;
     padding-bottom: 60px;
   }
-  .labelstylestrong {
-    font-size: inherit;
+
+  .labelStyleAnimate strong {
+    font-size: 0.87rem !important;
   }
+
   .labelStyleAnimate {
     color: #585858;
     text-align: start;
     letter-spacing: 1px;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 480;
     line-height: 28px;
     padding-left: 1rem;
@@ -1668,6 +1691,10 @@ sup {
     padding-right: 0rem;
     padding-left: 0.7rem;
   }
+  .h2Person {
+    color: #0d0d3f;
+    font-size: 0.6rem;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1675,7 +1702,12 @@ sup {
     flex-direction: column;
     margin-bottom: 1.5rem;
   }
-  
+
+  .h2Person {
+    color: #0d0d3f;
+    font-size: 0.55rem;
+  }
+
   .graphic-element-01 {
     display: none;
   }
@@ -1695,11 +1727,6 @@ sup {
     padding: 10px;
   }
 
-  .labelStylegif {
-    width: 100%;
-    text-align: center;
-    font-size: 0.8rem;
-  }
   .contedorgrid {
     grid-template-columns: 1fr;
     padding: 0.8rem;
@@ -1733,15 +1760,8 @@ sup {
     margin-bottom: 2rem;
   }
   .parrStyle {
-    width: 100%;
     font-size: 0.9rem;
-    color: #ff7e3d;
-    font-weight: 400;
-    margin-top: 2.5rem;
-    text-align: center;
-    text-decoration: none;
-    flex: auto;
-    justify-content: center;
+    line-height: 1rem !important;
   }
   .section.margin-top-100 {
     height: auto;
@@ -1749,14 +1769,14 @@ sup {
     padding-top: 20px;
     padding-bottom: 60px;
   }
-  .labelstylestrong {
-    font-size: inherit;
+  .labelStyleAnimate strong {
+    font-size: 0.82rem !important;
   }
   .labelStyleAnimate {
     color: #585858;
     text-align: start;
     letter-spacing: 1px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 480;
     line-height: 28px;
     padding-left: 1rem;
