@@ -207,7 +207,7 @@
   font-size: 1.3rem;
   color: #ff7e3d;
   font-weight: 400;
-  margin-top: 1.20rem;
+  margin-top: 1.2rem;
   text-align: center;
   text-decoration: none;
   flex: auto;
@@ -1582,7 +1582,10 @@ sup {
     font-weight: 400;
     line-height: 1rem !important;
   }
-
+  .ImgStyle {
+    height: 4rem;
+    padding: 1rem;
+  }
   .section.margin-top-100 {
     height: auto;
     margin-top: 20px;
@@ -1762,6 +1765,10 @@ sup {
   .parrStyle {
     font-size: 0.9rem;
     line-height: 1rem !important;
+  }
+  .ImgStyle {
+    height: 3.5rem;
+    padding: 0.50rem;
   }
   .section.margin-top-100 {
     height: auto;
